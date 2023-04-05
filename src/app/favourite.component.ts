@@ -1,19 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
-    selector: 'star',
+    selector: 'favourite',
     template: `
         <h1>STAR</h1>
         <i (click)="onClick()" [ngClass]="isFavourite ? filled : empty"></i>
     `
 }
 )
-export class StarComponent {
-    isFavourite = false;
+export class FavouriteComponent {
+    @Input("isFavourite") isFavourite = false;
+    @Output() change = new EventEmitter();
+
     empty = "bi bi-star";
     filled = "bi bi-star-fill";
 
     onClick() {
         this.isFavourite = !this.isFavourite;
+        this.change.emit();
     }
 }

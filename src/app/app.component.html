@@ -1,4 +1,4 @@
 <h1>Hello from app component</h1>
 <courses></courses>
 <app-course></app-course>
-<star></star>
+<favourite [isFavourite]="post.isFavourite" (change)="onFavouriteChange()"></favourite>

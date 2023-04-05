@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { CoursesComponent } from './courses.component';
-import { StarComponent } from './star.component';
+import { FavouriteComponent } from './favourite.component';
 
 import { CoursesService } from './courses.service';
 import { TitlecasePipe } from './titlecase.pipe';
@@ -16,7 +16,7 @@ import { TitlecasePipe } from './titlecase.pipe';
     AppComponent,
     CoursesComponent,
     CourseComponent,
-    StarComponent,
+    FavouriteComponent,
     TitlecasePipe
   ],
   imports: [
