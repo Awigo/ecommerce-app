@@ -1,4 +1,13 @@
 <h1>Hello from app component</h1>
 <courses></courses>
 <app-course></app-course>
-<favourite [isFavourite]="post.isFavourite" (change)="onFavouriteChange()"></favourite>
+<favourite [isFavourite]="post.isFavourite" (change)="onFavouriteChange($event)"></favourite>
+<bootstrap-panel>
+    <div class="header">
+        This header comes from app.component
+    </div>
+    <div class="body">
+        <h1>This is body</h1>
+        <p>And some text</p>
+    </div>
+</bootstrap-panel>
