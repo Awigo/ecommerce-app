@@ -3,9 +3,9 @@
 <app-course></app-course>
 <favourite [isFavourite]="post.isFavourite" (change)="onFavouriteChange($event)"></favourite>
 <bootstrap-panel>
-    <div class="header">
+    <ng-container class="header">
         This header comes from app.component
-    </div>
+    </ng-container>
     <div class="body">
         <h1>This is body</h1>
         <p>And some text</p>
